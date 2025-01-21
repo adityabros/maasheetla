@@ -267,11 +267,11 @@
         
         let audio = document.getElementById("myAudio");
         
-        window.addEventListener("scroll", () => {
+        window.addEventListener("click", () => {
             
           console.log("function called");
           playAudio();  
-          const myTimeout = setTimeout(pauseAudio, 5000);
+          const myTimeout = setTimeout(pauseAudio, 20000);
             
         }, { once: true });
         
