@@ -266,16 +266,14 @@
     <script>
         addEventListener("mousemove", (event) => {});
         
-        onmousemove = (event) => {
+        const myTimeout = setTimeout(playAudio, 5000);
+        let audio = document.getElementById("myAudio");
             
-            const myTimeout = setTimeout(pauseAudio, 5000);
-            let audio = document.getElementById("myAudio");
-            audio.play();
-        };
 
        
           function playAudio() {
             audio.play();
+            const myTimeout2 = setTimeout(pauseAudio, 10000);
           }
            
           function pauseAudio() {
