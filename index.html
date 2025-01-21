@@ -262,7 +262,26 @@
     <audio id="myAudio">
         <source src="assets/shitla_mata_mp3_song.webm" type="audio/mpeg">
     </audio>
+    
+    <script>
+        const myTimeout = setTimeout(pauseAudio, 5000);
+        let audio = document.getElementById("myAudio");
+        audio.play();
 
+       
+          function playAudio() {
+            audio.play();
+          }
+           
+          function pauseAudio() {
+            audio.pause();
+          }
+        function myStopFunction() {
+          clearTimeout(myTimeout);
+        }
+
+    </script>
+    
 </body>
 
 </html>
