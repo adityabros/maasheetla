@@ -264,9 +264,14 @@
     </audio>
     
     <script>
-        const myTimeout = setTimeout(pauseAudio, 5000);
-        let audio = document.getElementById("myAudio");
-        audio.play();
+        addEventListener("mousemove", (event) => {});
+        
+        onmousemove = (event) => {
+            
+            const myTimeout = setTimeout(pauseAudio, 5000);
+            let audio = document.getElementById("myAudio");
+            audio.play();
+        };
 
        
           function playAudio() {
