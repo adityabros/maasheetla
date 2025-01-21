@@ -264,16 +264,24 @@
     </audio>
     
     <script>
-        addEventListener("mousemove", (event) => {});
         
-        const myTimeout = setTimeout(playAudio, 5000);
         let audio = document.getElementById("myAudio");
+        
+        window.addEventListener("click", () => {
+            
+          console.log("function called");
+          playAudio();  
+          const myTimeout = setTimeout(pauseAudio, 5000);
+            
+        }, { once: true });
+        
+        
+        
             
 
        
           function playAudio() {
             audio.play();
-            const myTimeout2 = setTimeout(pauseAudio, 10000);
           }
            
           function pauseAudio() {
